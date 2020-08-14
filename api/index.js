@@ -6,7 +6,8 @@ mongoose.connect(process.env.MONGODB_URI);
 
 const Users = mongoose.model('User', new mongoose.Schema({ name: String }));
 
-Users.create({ name: 'chanchito feliz' });
+Users.create({ name: 'Ronaldo' });
+Users.create({ name: 'Pachakutik'});
 
 app.get('*', (req, res) => {
     Users.find()
