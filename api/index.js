@@ -9,6 +9,6 @@ mongoose.connect(process.env.MONGODB_URI, { useNewUrlParser: true, useUnifiedTop
 const router = express.Router();
 
 app.use('/api/plates', plates);
-app.use('/api/plates', orders);
+app.use('/api/orders', orders);
 
 module.exports = app;
